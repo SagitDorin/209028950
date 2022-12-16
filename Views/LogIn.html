@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn</title>
+      <link rel="stylesheet" href="../Static/CSS.css">
+        <script src="../Static/JS_NAIL4U.js"></script>
+</head>
+<body>
+<nav>
+   <div class="topnav">
+          <a class="navbar-brand" href="../Views/HomePage.html">
+              <div class="logo">
+                    <img src="../Static/Images/Logo.jpg" alt="Logo">
+              </div>
+          </a>
+          <div class="topnav-right">
+                 <a href="../Views/SearchAppointment.html">Search</a>
+                   <a href="../Views/About.html">About</a>
+                    <a href="../Views/OurCosmeticians.html"> Cosmeticians </a>
+                   <a href="../Views/Favorites.html"> Favorites </a>
+                   <a href="../Views/LogIn.html"> Log In </a>
+                   <a href="../Views/NewAccount.html"> Join Us </a>
+             </div>
+          </div>
+        </div>
+</nav>
+    <div class="container-LogIn">
+    <div class="title">
+        Log In
+    </div>
+    <form name="LogIn" action="../Views/SearchAppointment.html" onsubmit="return ValidLogIn()" >
+        <div class="form">
+        <label for="email"></label><br>
+        <input type="email" id="email" name="email" placeholder="Email"><br>
+        <label for="password"></label><br>
+        <input type="password" id="password" name="password" placeholder="Password"><br>
+            <br>
+            <br>
+        <input type="submit" value="Log In">
+         <br>
+         <div class="create-account">
+             No account? <a href="../Views/NewAccount.html">Create one</a>
+         </div>
+         </div>
+    </form>
+</div>
+</body>
+</html>

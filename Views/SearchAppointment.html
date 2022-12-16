@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SearchAppointment</title>
+     <link rel="stylesheet" href="../Static/CSS.css">
+    <script src="../Static/JS_NAIL4U.js"></script>
+</head>
+<body>
+
+    <nav>
+       <div class="topnav">
+          <a class="navbar-brand" href="../Views/HomePage.html">
+              <div class="logo">
+                    <img src="../Static/Images/Logo.jpg" alt="Logo">
+              </div>
+          </a>
+          <div class="topnav-right">
+                 <a href="../Views/SearchAppointment.html">Search</a>
+                   <a href="../Views/About.html">About</a>
+                    <a href="../Views/OurCosmeticians.html"> Cosmeticians </a>
+                   <a href="../Views/Favorites.html"> Favorites </a>
+                   <a href="../Views/LogIn.html"> Log In </a>
+                   <a href="../Views/NewAccount.html"> Join Us </a>
+             </div>
+          </div>
+        </div>
+    </nav>
+    <div class="container-search">
+         <div class="title">
+        Search For Appointment
+        </div>
+        <br>
+        <form action="../Views/Results.html">
+            <div class="form">
+            <label for="location">Location</label>
+          <select name="location" id="location">
+            <option value="BeerSheva">Beer Sheva</option>
+            <option value="Tel-Aviv">Tel-Aviv</option>
+            <option value="Jerusalem">Jerusalem</option>
+            <option value="Haifa">Haifa</option>
+            <option value="Herzliya">Herzliya</option>
+            <option value="Ramat-Gan">Ramat-Gan</option>
+            <option value="Ashkelon">Ashkelon</option>
+            <option value="Ramat-Hasharon">Ramat-Hasharon</option>
+          </select><br><br>
+            <label for="date"></label>
+            <input type="date" id="date" name="date" onload="getDate()" required>
+             <label for="time"></label>
+            <input type="time" id="time" name="time" placeholder="Time" required><br><br>
+            <label for="maxPrice">Maximum Price</label>
+            <input type="number" min="0" id="maxPrice" name="maxPrice"><br><br>
+           <input type="checkbox" id="flexible" name="flexible" value="flexible">
+            <label for="flexible"> I'm flexible on time</label><br><br>
+            <input type="checkbox" id="show-fav" name="show-fav" value="show-fav">
+            <label for="show-fav"> Show only favorite cosmeticians</label><br><br><br>
+            <input type="submit" value="Search">
+             </div>
+        </form>
+    </div>
+</body>
+</html>
