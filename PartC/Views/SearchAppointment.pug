@@ -1,0 +1,31 @@
+extends Layout
+block content
+  .container-search
+    .title
+      | #{title}
+    br
+    form(name='Search' action='/Search' method='get')
+      .form
+
+            label(for='location') Location
+            select#location(name='location')
+              each n in res
+                option(value=n.city) #{n.city}
+            br
+            br
+            label(for='date')
+            input#date(type='date' name='date' onload='getDate()' required)
+            label(for='time')
+            input#time(type='time' name='time' placeholder='Time' required)
+            br
+            br
+            label(for='maxPrice') Maximum Price
+            input#maxPrice(type='number' min='0' name='maxPrice')
+            br
+            br
+            input#flexible(type='checkbox' name='flexible' value='flexible')
+            label(for='flexible')  I&apos;m flexible on time
+            br
+            br
+            br
+            input(type='submit' value='Search')

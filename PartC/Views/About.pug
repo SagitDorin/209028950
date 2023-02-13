@@ -1,0 +1,14 @@
+extends Layout
+block content
+  .container-AboutUs
+    .title  #{title}
+    .aboutUs-text
+      b NAIL4U
+      |  #{content}
+      br
+      br
+    #main-slider.slider
+      .slider-wrapper
+        each val in var1
+          img.slide(src=val.Image_Name alt=val.alt)
+

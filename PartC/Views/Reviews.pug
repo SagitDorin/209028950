@@ -1,0 +1,35 @@
+extends Layout
+block content
+  .container-cosmeticians
+    section#about
+      .title Reviews
+      br
+      div(id='about 2')
+        .content-box-lg
+          .guide-container
+            .row
+              each n in res
+                .col-md-4
+                  .about-item.text-center
+                    i.fas.fa-map-marked-alt
+                      table
+                        tr
+                          td
+                            img(src='Images/calendar.png')
+                          td.review-time
+                            p #{n.date}
+                        tr
+                          td
+                            img(src='Images/star.png')
+                          td.review-rating
+                            p #{n.rating} / 5
+                        tr
+                          td
+                          td.review-text
+                            p
+                              | #{n.review}
+
+              div
+                a(href='/WriteReview')
+                  span
+                    button.rev-but Add Review

@@ -1,0 +1,19 @@
+head
+  meta(charset='UTF-8')
+  title HomePage
+  link(rel='stylesheet', href="/CSS.css")
+  script(src="JS_NAIL4U.js", defer)
+  script(src='https://use.fontawesome.com/a6f0361695.js', defer)
+  script(src='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css', defer)
+body
+  nav(class="topnav")
+      a(class="navbar-brand", href='/')
+          div(class= "logo")
+            img(src='Images/Logo.jpg' alt='Logo')
+      div(class="topnav-right")
+          a(href='/SearchAppointment') Search
+          a(href='/About') About
+          a(href='/OurCosmeticians')  Cosmeticians
+          a(href='/EditProfile')  Edit Profile
+          a(href='/NewAccountWithNav')  Join Us
+  block content

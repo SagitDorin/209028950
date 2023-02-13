@@ -1,0 +1,21 @@
+extends Layout
+block content
+  .container-favorites
+    .title
+      | #{title}
+    .grid-fav
+      .areaA
+        each n in res
+          table
+            tr
+              td.logoColumn
+                img(src='Images/PersonLogo.png')
+              td #{n.cosmetician_name}
+              td.X-logo
+                p#tooltip-text Remove from favorites
+                button#tooltip(type='submit')
+                  img(src='Images/XLogo.png')
+            tr
+              td
+              td
+                a.view-rev-fav(href='/CosmeticianDetails/'+n.cosmetician_id) Show details

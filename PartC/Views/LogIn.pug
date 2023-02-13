@@ -1,0 +1,32 @@
+head
+  meta(charset='UTF-8')
+  title HomePage
+  link(rel='stylesheet', href="/CSS.css")
+  script(src="JS_NAIL4U.js", defer)
+  script(src='https://use.fontawesome.com/a6f0361695.js', defer)
+  script(src='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css', defer)
+body
+  nav(class="topnav")
+    a(class="navbar-brand", href='/')
+      div(class= "logo")
+        img(src='Images/Logo.jpg' alt='Logo')
+  .container-LogIn
+    .title
+      | #{title}
+    form(name='LogIn' action='/LogIn' method='post')
+      .form
+        label(for='email')
+        br
+        input#email(type='email' name='email' placeholder='Email')
+        br
+        label(for='password')
+        br
+        input#password(type='password' name='password' placeholder='Password')
+        br
+        br
+        br
+        input(type='submit' value='Log In')
+        br
+        .create-account
+          | No account?
+          a(href='/NewAccount') Create one

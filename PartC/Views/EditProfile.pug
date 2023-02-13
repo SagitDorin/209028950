@@ -1,0 +1,38 @@
+extends Layout
+block content
+  .container-UpdateAccount
+    .title
+      | #{title}
+    form(name='NewAccount' action='/UpdateAccount' onsubmit='return ValidForm()' method='get')
+      .form
+        label(for='email')
+        br
+        input#email(type='email' name='email' value=email  required)
+        br
+        label(for='fname')
+        br
+        input#fname(type='text' name='fname' value=fname required)
+        br
+        label(for='lname')
+        br
+        input#lname(type='text' name='lname' value=lname required)
+        br
+        label(for='password')
+        br
+        input#password(type='password' name='password' value=password required)
+        br
+        label(for='age')
+        br
+        input#age(type='text' name='age' value=age required)
+        br
+        label(for='phone')
+        br
+        input#phone(type='text' name='phone' value=phone required)
+        br
+        br
+        br
+        input(type='submit' value='Save Changes')
+
+    div
+      a(href='/DeleteAccount')
+          button.btn-delete Delete Account

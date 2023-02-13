@@ -1,0 +1,47 @@
+extends Layout
+block content
+  .container-cosmeticians
+    section#about
+      .title
+        .header #{fname} #{lname}
+      br
+      div(id='about 2')
+        .content-box-lg
+          .guide-container
+            .row
+                .col-md-4
+                  .about-item.text-center
+                    i.fas.fa-map-marked-alt
+                        table
+                                tr
+                                    td.logoColumn
+                                        img(src='Images/address1.png')
+                                    td #{address}
+                                tr
+                                    td.logoColumn
+                                        img(src='Images/Location.png')
+                                    td #{city}
+                                tr
+                                    td.logoColumn
+                                        img(src='Images/phone.png')
+                                    td #{phone}
+                                tr
+                                    td.logoColumn
+                                        img(src='Images/coins1.png')
+                                    td #{cost}
+                                tr
+                                    td.logoColumn
+                                        img(src='Images/instagram.png')
+                                    td
+                                        a(href=instagram)  Instagram
+                                tr
+                                    td
+                                    td Years of experience: #{years}
+
+
+                                tr
+                                    td
+                                    td About #{fname} : #{about}
+
+
+

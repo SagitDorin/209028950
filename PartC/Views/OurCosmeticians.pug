@@ -1,0 +1,27 @@
+extends Layout
+block content
+  .container-cosmeticians
+    section#about
+      .title
+        .header #{title}
+      br
+      div(id='about 2')
+        .content-box-lg
+          .guide-container
+            .row
+              each n in res
+                .col-md-4
+                  .about-item.text-center
+                    i.fas.fa-map-marked-alt
+                    h3 #{n.fname} #{n.lname}
+                    hr
+                    p
+                      b Years Of Experience: #{n.Years_Of_Exp} |
+                      b City: #{n.city} |
+                      b Cost: #{n.cost} |
+                      a.inst-information(href=n.instagram)  Instagram
+                    p.about-text #{n.about}
+                    a(href='/Reviews/'+n.id)
+                      span
+                        button.rev-but View Reviews
+

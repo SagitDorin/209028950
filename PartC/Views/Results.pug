@@ -1,0 +1,41 @@
+extends Layout
+block content
+  .container-cosmeticians
+    section#about
+      .title
+        .header #{title}
+      br
+      div(id='about 2')
+        .content-box-lg
+          .guide-container
+            .row
+              each n in res
+                .col-md-4
+                  .about-item.text-center
+                    i.fas.fa-map-marked-alt
+                        table
+                            tr
+                                td.logoColumn
+                                    img(src='Images/Person.png')
+                                td
+                                    a(href='/CosmeticianDetails/'+n.cosmetician_id) #{n.cosmetician_name}
+                            tr
+                                td.logoColumn
+                                    img(src='Images/Location.png')
+                                td=n.city
+                            tr
+                                td.logoColumn
+                                    img(src='Images/calendar.png')
+                                td=n.date
+                            tr
+                                td.logoColumn
+                                    img(src='Images/clock.png')
+                                td=n.time
+
+
+
+
+
+
+
+

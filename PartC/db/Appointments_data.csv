@@ -1,0 +1,28 @@
+id,cosmetician_id,cosmetician_name,date,time,city,cost
+1,1,Elle,2023.02.15,10:00:00,Ramat-Hasharon,110
+2,2,Logan ,2023.02.16,10:00:00,Ramat-Gan,120
+3,3,Alana,2023.02.17,10:00:00,BeerSheva,130
+4,4,Jack,2023.02.18,10:00:00,BeerSheva,90
+5,5,Erick,2023.02.19,10:00:00,BeerSheva,100
+6,6,Jaden,2023.02.20,10:00:00,Herzliya,120
+7,7,Zoey ,2023.02.21,10:00:00,Tel-Aviv,120
+8,8,Romeo ,2023.02.22,10:00:00,Tel-Aviv,160
+9,9,Pablo,2023.02.23,10:00:00,Tel-Aviv,150
+10,9,Pablo,2023.02.15,12:00:00,Ramat-Hasharon,110
+11,8,Romeo ,2023.02.16,12:00:00,Ramat-Gan,120
+12,7,Zoey ,2023.02.17,12:00:00,BeerSheva,130
+13,6,Jaden,2023.02.18,12:00:00,BeerSheva,90
+14,5,Erick,2023.02.19,12:00:00,BeerSheva,100
+15,4,Jack,2023.02.20,12:00:00,Herzliya,120
+16,3,Alana,2023.02.21,12:00:00,Tel-Aviv,120
+17,2,Logan ,2023.02.22,12:00:00,Tel-Aviv,160
+18,1,Elle,2023.02.23,12:00:00,Tel-Aviv,150
+19,4,Jack,2023.02.15,14:00:00,Ramat-Hasharon,110
+20,5,Erick,2023.02.16,14:00:00,Ramat-Gan,120
+21,2,Logan ,2023.02.17,14:00:00,BeerSheva,130
+22,3,Alana,2023.02.18,14:00:00,BeerSheva,90
+23,8,Romeo ,2023.02.19,14:00:00,BeerSheva,100
+24,9,Pablo,2023.02.20,14:00:00,Herzliya,120
+25,1,Elle,2023.02.21,14:00:00,Tel-Aviv,120
+26,6,Jaden,2023.02.22,14:00:00,Tel-Aviv,160
+27,7,Zoey ,2023.02.23,14:00:00,Tel-Aviv,150

@@ -1,0 +1,30 @@
+extends Layout
+block content
+  .container-WriteReview
+    .title-newReview  #{title}
+    .title-ReviewMessage Notice: You need to log-in before submitting your review!!!
+    h5.fh6
+      | #{message}
+    form(name='feedback' action='/insertNewReview' method='post')
+      .form
+        .feedback
+          .pinfo Rate our overall services
+          .form-group
+            .col-md-4.inputGroupContainer
+              .input-group
+                span.input-group-addon
+                  i.fa.fa-heart
+                select#rate(name='rate').form-control
+                  option(value='1') 1
+                  option(value='2s') 2
+                  option(value='3') 3
+                  option(value='4') 4
+                  option(value='5') 5
+          .pinfo Write your feedback
+          .form-group
+            .col-md-4.inputGroupContainer
+              .input-group
+                span.input-group-addon
+                  i.fa.fa-pencil
+                textarea#review(name='review' required).form-control(rows='5')
+          input.btn.btn-primary(type='submit' value='Upload Review')
